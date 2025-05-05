@@ -1,5 +1,6 @@
 com\mycompany\app\App.class
 com\mycompany\app\Movimiento.class
+com\mycompany\app\PantallaJayron.class
 com\mycompany\app\MovimientoAcelerado.class
 com\mycompany\app\Conversiones.class
 com\mycompany\app\TerceraLeydeNewton.class

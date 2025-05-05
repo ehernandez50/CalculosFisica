@@ -4,9 +4,10 @@ package com.mycompany.app;
 import java.util.Scanner;
 import com.mycompany.app.TerceraLeydeNewton;
 import com.mycompany.app.MovimientoAcelerado;
+import com.mycompany.app.PantallaJayron;
 public class Movimiento {
     
-    
+       public static final Scanner scanner = new Scanner(System.in);
  
 
      public static double calcularDistanciaMRU(double v, double t) {
@@ -68,7 +69,7 @@ public class Movimiento {
     public void menu(){
     
     
-     Scanner scanner = new Scanner(System.in);
+   
 
         while (true) {
             System.out.println("\nSelecciona la operacion que deseas realizar:");
@@ -84,12 +85,13 @@ public class Movimiento {
             System.out.println("10. Calcular el ángulo entre dos vectores");
             System.out.println("11. Calcular MRUA");
             System.out.println("12. Calcular newton3");
-            System.out.println("0. Salir");
+            System.out.println("13. Caida libre");
+            System.out.println("14. Salir");
 
             System.out.print("Ingresa tu opcion: ");
             int opcion = scanner.nextInt();
 
-            if (opcion == 0) {
+            if (opcion == 14) {
                 System.out.println("Saliendo...");
                 break;
             }
@@ -228,6 +230,9 @@ public class Movimiento {
                    
                     break;
                 }
+                case 13:
+                    PantallaJayron.MenuCaidaLibre();
+                    break;
                 default:
                     System.out.println("Opción no válida. Intenta de nuevo.");
             }

@@ -1,21 +1,20 @@
 
 package com.mycompany.app;
 import java.util.Scanner;
-
-    
+import com.mycompany.app.Movimiento;
 public class TerceraLeydeNewton {
 
     public static void Newton3() {
-        Scanner sc = new Scanner(System.in);
+       
 
         System.out.print("Ingrese la masa del Primer Objeto (kg): ");
-        double masa1 = sc.nextDouble();
+        double masa1 = Movimiento.scanner.nextDouble();
 
         System.out.print("Ingrese la masa del Segundo Objeto (kg): ");
-        double masa2 = sc.nextDouble();
+        double masa2 = Movimiento.scanner.nextDouble();
 
         System.out.print("Ingrese la fuerza que el Primero ejerce sobre el Segundo (N): ");
-        double fuerza = sc.nextDouble();
+        double fuerza = Movimiento.scanner.nextDouble();
 
         double fuerzaSobre2 = fuerza;
         double fuerzaSobre1 = -fuerza;
@@ -29,7 +28,7 @@ public class TerceraLeydeNewton {
         System.out.printf("Aceleracion del Primero: %.2f m/s²\n", aceleracion1);
         System.out.printf("Aceleracion del Segundo: %.2f m/s²\n", aceleracion2);
 
-        sc.close();
+     
     }
 }
 
