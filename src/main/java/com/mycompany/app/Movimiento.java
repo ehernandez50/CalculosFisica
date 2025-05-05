@@ -6,6 +6,10 @@ import com.mycompany.app.TerceraLeydeNewton;
 import com.mycompany.app.MovimientoAcelerado;
 import com.mycompany.app.PantallaJayron;
 public class Movimiento {
+    public static final String RED = "\u001B[31m";
+public static final String GREEN = "\u001B[32m";
+public static final String RESET = "\u001B[0m";
+
     
        public static final Scanner scanner = new Scanner(System.in);
  
@@ -72,7 +76,12 @@ public class Movimiento {
    
 
         while (true) {
-            System.out.println("\nSelecciona la operacion que deseas realizar:");
+        
+
+
+          System.out.println("===================================");
+System.out.println(GREEN+"        MENU PRINCIPAL - FISICA    "+RESET);
+System.out.println("===================================");
             System.out.println("1. Calcular Distancia (MRU)");
             System.out.println("2. Calcular Velocidad (MRU)");
             System.out.println("3. Calcular Tiempo (MRU)");
@@ -82,7 +91,7 @@ public class Movimiento {
             System.out.println("7. Restar dos vectores");
             System.out.println("8. Producto Escalar de dos vectores");
             System.out.println("9. Multiplicar un vector por un escalar");
-            System.out.println("10. Calcular el ángulo entre dos vectores");
+            System.out.println("10. Calcular el Angulo entre dos vectores");
             System.out.println("11. Calcular MRUA");
             System.out.println("12. Calcular newton3");
             System.out.println("13. Caida libre");
