@@ -47,20 +47,8 @@ public class Calculos {
         return new double[]{v1[0] - v2[0], v1[1] - v2[1]};
     }
 
-    public static double productoEscalar(double[] v1, double[] v2) {
-        return v1[0] * v2[0] + v1[1] * v2[1];
-    }
+ 
 
-  public static double[] multiplicarPorEscalar(double[] v, double escalar) {
-    return new double[]{v[0] * escalar, v[1] * escalar};
-}
-
-    public static double calcularAnguloEntreVectores(double[] v1, double[] v2) {
-        double producto = productoEscalar(v1, v2);
-        double magnitud1 = calcularMagnitud(v1[0], v1[1]);
-        double magnitud2 = calcularMagnitud(v2[0], v2[1]);
-        double cosTheta = producto / (magnitud1 * magnitud2);
-        return Math.toDegrees(Math.acos(cosTheta));
-    }
+  
     
 }

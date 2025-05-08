@@ -35,13 +35,10 @@ public class Movimiento {
             System.out.println("5. Calcular Componentes de un vector");
             System.out.println("6. Sumar dos vectores");
             System.out.println("7. Restar dos vectores");
-            System.out.println("8. Producto Escalar de dos vectores");
-            System.out.println("9. Multiplicar un vector por un escalar");
-            System.out.println("10. Calcular el Angulo entre dos vectores");
-            System.out.println("11. Calcular MRUA");
-            System.out.println("12. Calcular newton3");
-            System.out.println("13. Caida libre");
-            System.out.println("14. Salir");
+            System.out.println("8. Calcular MRUA");
+            System.out.println("9. Calcular newton3");
+            System.out.println("10. Caida libre");
+            System.out.println("11. Salir");
 
             System.out.print("Ingresa tu opcion: ");
             int opcion = scanner.nextInt();
@@ -130,62 +127,21 @@ public class Movimiento {
                     System.out.println("El resultado de la resta es: x = " + resta[0] + ", y = " + resta[1]);
                     break;
                 }
+              
+            
+                
                 case 8: {
-                    // Producto Escalar
-                    System.out.print("Ingresa el componente x del primer vector: ");
-                    double x1 = scanner.nextDouble();
-                    System.out.print("Ingresa el componente y del primer vector: ");
-                    double y1 = scanner.nextDouble();
-                    System.out.print("Ingresa el componente x del segundo vector: ");
-                    double x2 = scanner.nextDouble();
-                    System.out.print("Ingresa el componente y del segundo vector: ");
-                    double y2 = scanner.nextDouble();
-                    double producto =Calculos.productoEscalar(new double[]{x1, y1}, new double[]{x2, y2});
-                    System.out.println("El producto escalar es: " + producto);
-                    break;
-                }
-                case 9: {
-                    // Multiplicar un vector por un escalar
-                    System.out.print("Ingresa el componente x del vector: ");
-                    double x = scanner.nextDouble();
-                    System.out.print("Ingresa el componente y del vector: ");
-                    double y = scanner.nextDouble();
-                    System.out.print("Ingresa el valor del escalar: ");
-                    double escalar = scanner.nextDouble();
-                    double[] resultado = Calculos.multiplicarPorEscalar(new double[]{x, y}, escalar);
-                    System.out.println("El vector multiplicado por el escalar es: x = " + resultado[0] + ", y = " + resultado[1]);
-                    break;
-                }
-                case 10: {
-                    // Calcular el ángulo entre dos vectores
-                    System.out.print("Ingresa el componente x del primer vector: ");
-                    double x1 = scanner.nextDouble();
-                    System.out.print("Ingresa el componente y del primer vector: ");
-                    double y1 = scanner.nextDouble();
-                    System.out.print("Ingresa el componente x del segundo vector: ");
-                    double x2 = scanner.nextDouble();
-                    System.out.print("Ingresa el componente y del segundo vector: ");
-                    double y2 = scanner.nextDouble();
-                    double angulo =Calculos.calcularAnguloEntreVectores(new double[]{x1, y1}, new double[]{x2, y2});
-                    System.out.println("El ángulo entre los vectores es: " + angulo + " grados");
-                    break;
-                }
-                
-                
-                
-                
-                case 11: {
                    MovimientoAcelerado.MRUA();
                  
                     break;
                 }
              
-                case 12: {
+                case 9: {
                  TerceraLeydeNewton.Newton3();
                    
                     break;
                 }
-                case 13:
+                case 10:
                     PantallaJayron.MenuCaidaLibre();
                     break;
                 default:
