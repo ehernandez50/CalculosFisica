@@ -38,12 +38,13 @@ public class Movimiento {
             System.out.println("8. Calcular MRUA");
             System.out.println("9. Calcular newton3");
             System.out.println("10. Caida libre");
-            System.out.println("11. Salir");
+            System.out.println("11. Segunda ley de Newton");
+            System.out.println("12. Salir");
 
             System.out.print("Ingresa tu opcion: ");
             int opcion = scanner.nextInt();
 
-            if (opcion == 14) {
+            if (opcion == 12) {
                 System.out.println("Saliendo...");
                 break;
             }
@@ -126,7 +127,13 @@ public class Movimiento {
                     double[] resta =Calculos.restarVectores(new double[]{x1, y1}, new double[]{x2, y2});
                     System.out.println("El resultado de la resta es: x = " + resta[0] + ", y = " + resta[1]);
                     break;
+                    }
+             
+                case 11: {
+                 SegundaLeyDeNewton.SegundaLey();
+                    break;
                 }
+                
               
             
                 
